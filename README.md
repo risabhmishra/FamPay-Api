@@ -27,17 +27,17 @@
 Configure Redis as a cache on Ubuntu
 
 To configure Redis as a cache you need to edit the /etc/redis/redis.conf file. We will use nano as a text editor for this purpose, but you can use any text editor of your choice.
-sudo nano /etc/redis/redis.conf
+- sudo nano /etc/redis/redis.conf
 
 To configure the max memory for Redis as well as how Redis will select what to remove when the max memory is reached, add the following lines at the end of the file:
-maxmemory 128mb
-maxmemory-policy allkeys-lru
+- maxmemory 128mb
+- maxmemory-policy allkeys-lru
 
 In this example, Redis will remove any key according to the LRU algorithm when the max memory of 128mb is reached. Save and close the file, then restart the Redis service:
-sudo systemctl restart redis-server.service
+- sudo systemctl restart redis-server.service
 
 Next, enable Redis on system boot:
-sudo systemctl enable redis-server.service
+- sudo systemctl enable redis-server.service
 
 # Running Celery Commands in two different terminals
 1. celery -A clmsite worker -l info
