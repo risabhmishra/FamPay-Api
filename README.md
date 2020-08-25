@@ -48,7 +48,8 @@ Next, enable Redis on system boot:
 2. cd FamPayAssignment/FamPayAssignment
 3. open the __settings.py__ file and change the username and password in "DATABASES".
 4. Specify the username and password that was set for the database.
-5. Set DEVELOPER_KEY to the API key value from the APIs & auth > Registered apps
+5. Set DEVELOPER_KEY to the API key value from the APIs & auth > Registered apps.
+6. Set QUERY_TERM to 'search_query' to be searched in the YouTube Data Api.
 
 ## Running FamPay Api :
 1. python3 manage.py makemigrations
