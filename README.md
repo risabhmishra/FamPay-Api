@@ -1,4 +1,4 @@
-# FamPay API 
+# YouTube Search API 
 - Server should call the YouTube API continuously in background (async) with some interval (say 10 seconds) for fetching the latest videos for a predefined search query and should store the data of videos (specifically these fields - Video title, description, publishing datetime, thumbnails URLs and any other fields you require) in a database with proper indexes.
 
 # Technology Stack
@@ -45,13 +45,13 @@ Next, enable Redis on system boot:
 
 ## Modify settings :
 1. The database username and password must be set before running the web app.
-2. cd FamPayAssignment/FamPayAssignment
+2. cd youtubeapi/youtubeapi
 3. open the __settings.py__ file and change the username and password in "DATABASES".
 4. Specify the username and password that was set for the database.
 5. Set DEVELOPER_KEY to the API key value from the APIs & auth > Registered apps.
 6. Set QUERY_TERM to 'search_query' to be searched in the YouTube Data Api.
 
-## Running FamPay Api :
+## Running Api :
 1. python3 manage.py makemigrations
 2. python3 manage.py migrate
 3 python3 manage.py runserver
