@@ -1,7 +1,7 @@
 import logging
 
 from api.models import APIVideos
-from FamPayAssignment.settings import DEVELOPER_KEY, YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, QUERY_TERM
+from YoutubeSearchAPI.settings import DEVELOPER_KEY, YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, QUERY_TERM
 
 from celery.task.schedules import crontab
 from celery.decorators import periodic_task

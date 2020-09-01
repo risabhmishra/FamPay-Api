@@ -1,5 +1,5 @@
 """
-ASGI config for FamPayAssignment project.
+ASGI config for YoutubeSearchAPI project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FamPayAssignment.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'YoutubeSearchAPI.settings')
 
 application = get_asgi_application()
