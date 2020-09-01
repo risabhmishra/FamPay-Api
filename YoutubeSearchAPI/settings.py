@@ -15,6 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -25,6 +26,7 @@ SECRET_KEY = 'wo%=2l1b#xgx7o3#gd4_zj$3@0sif@201(fbo#08eo2q-0%nmv'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -85,13 +87,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fampaydb',
-        'USER': 'username',  # set Postgres Username here
-        'PASSWORD': 'password',  # set Postgres Password here
+        'USER': 'sensen',
+        'PASSWORD': 'sensen_123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
-
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -102,8 +103,7 @@ REST_FRAMEWORK = {
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-
-DEVELOPER_KEY = ''  # Add the API Key here
+DEVELOPER_KEY = 'AIzaSyBPnB70-pGkKdl4JN7NgiW9ELphLkqTHyQ'
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 QUERY_TERM = 'corona'
@@ -126,6 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -138,6 +139,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
